@@ -47,7 +47,8 @@ dnf install -y \
 	inkscape \
 	mpv \
 	vlc \
-	sound-juicer
+	sound-juicer \
+	picard
 
 # From base image: Developer Tools
 # 	toolbox
