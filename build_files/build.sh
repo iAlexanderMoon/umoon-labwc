@@ -68,7 +68,11 @@ dnf install -y \
 #xdg-desktop-portal-wlr
 #xorg-x11-server-Xwayland
 
+# Add labwc desktop option for wayland sessions
+cp labwc.desktop /usr/share/wayland-sessions/labwc.desktop
 
+# Set some defaults I prefer
+cp foot.ini /etc/xdg/foot/foot.ini
 
 # Use a COPR Example:
 #
@@ -77,6 +81,7 @@ dnf install -y \
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+
+#### Example for enabling a System Unit File
+#systemctl enable podman.socket
