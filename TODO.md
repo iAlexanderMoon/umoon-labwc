@@ -15,12 +15,11 @@
 * add themes that can be used for openbox.
 * but what about the waybar themes?
 
-### SDDM Theme
+### SDDM 
+* Theme labwc
 
 ## firefox
 * missing windows buttons CSD
-
-## waybar isn't working! 
 
 ## waybar configuration
 * /etc/xdg/waybar/config
@@ -29,3 +28,4 @@
   * try ~/.config/warbar/config
 * quick menu and right click menu in the menu bar... or how about a menu in waybar
 * waybar workspaces
+* waybar wofi launcher button? on left
