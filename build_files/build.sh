@@ -29,13 +29,21 @@ dnf install -y \
 	swaylock \
 	Thunar \
 	thunar-archive-plugin \
-	thunderbird
-
-# Labwc
-dnf install -y \
-	labwc 
+	thunderbird \
+	labwc
+#labwc?
 #dnf5 -y install wlopm
 #dnf5 -y install chayang
+
+# Developer Tools from starter image
+# toolbox
+# distrobox
+# podman
+# just
+dnf install -y \
+	make \
+	neovim \
+	helix 
 
 #NetworkManager-l2tp-gnome \
 #NetworkManager-libreswan-gnome \
