@@ -21,11 +21,8 @@
   <item label="Email">
     <action name="Execute" command="thunderbird" />
   </item>
-  <item label="VSCodium">
-    <action name="Execute" command="flatpak run com.vscodium.codium" />
-  </item>
   <item label="VSCode">
-    <action name="Execute" command="flatpak run com.visualstudio.code" />
+    <action name="Execute" command="code" />
   </item>
 
   <separator/>
