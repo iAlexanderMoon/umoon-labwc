@@ -46,7 +46,8 @@ dnf install -y \
 	gimp \
 	inkscape \
 	mpv \
-	vlc
+	vlc \
+	sound-juicer
 
 # From base image: Developer Tools
 # 	toolbox
