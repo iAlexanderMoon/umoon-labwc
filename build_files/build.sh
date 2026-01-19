@@ -26,7 +26,7 @@ dnf install -y \
 	sway-config-fedora \
 	swaybg \
 	swayidle \
-	swaylock
+	swaylock \
 	Thunar \
 	thunar-archive-plugin \
 	thunderbird
