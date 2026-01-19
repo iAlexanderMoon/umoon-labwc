@@ -9,10 +9,62 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# this installs a package from fedora repos
+# Sway
+dnf install -y \
+	NetworkManager-l2tp-gnome
+	NetworkManager-libreswan-gnome
+	NetworkManager-openconnect-gnome
+	NetworkManager-openvpn-gnome
+	NetworkManager-sstp-gnome
+	NetworkManager-vpnc-gnome
+	Thunar
+	blueman
+	bolt
+	dunst
+	foot
+	fprintd-pam
+	gnome-keyring-pam
+	grim
+	gvfs
+	gvfs-smb
+	imv
+	kanshi
+	lxqt-policykit
+	mesa-dri-drivers
+	mesa-vulkan-drivers
+	network-manager-applet
+	pavucontrol
+	pinentry-gnome3
+	playerctl
+	plymouth-system-theme
+	polkit
+	pulseaudio-utils
+	sddm
+	sddm-wayland-sway
+	slurp
+	sway
+	sway-config-fedora
+	swaybg
+	swayidle
+	swaylock
+	system-config-printer
+	thunar-archive-plugin
+	tuned-ppd
+	tuned-switcher
+	waybar
+	wev
+	wl-clipboard
+	wlr-randr
+	wlsunset
+	xarchiver
+	xdg-desktop-portal-gtk
+	xdg-desktop-portal-wlr
+	xorg-x11-server-Xwayland
+
+# labwc
 dnf5 -y install labwc
-dnf5 -y install wlopm
-dnf5 -y install chayang
+#dnf5 -y install wlopm
+#dnf5 -y install chayang
 
 
 # Use a COPR Example:
