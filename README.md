@@ -1,8 +1,14 @@
 # umoon-labwc (WIP)
 * A custom Fedora Atomic image designed for me.
 * From UBlue base-main:43
-* SDDM 
-* 
+
+# Install an ostree desktop
+
+```sh
+rpm-ostree rebase ostree-image-signed:ghcr.io/ialexandermoon/umoon-labwc:latest
+systemctl reboot
+```
+ 
 
 GitHub Actions has no release support built in and doesn't currently have an action for it.
 
