@@ -35,7 +35,8 @@ dnf install -y \
 	thunar-archive-plugin \
 	labwc \
 	wlopm \
-	chayang 
+	chayang \
+       	mako	
 
 # From base image:  applications
 # 	firefox
