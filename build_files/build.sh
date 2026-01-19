@@ -27,6 +27,9 @@ dnf install -y \
 	swaybg \
 	swayidle \
 	swaylock
+	Thunar \
+	thunar-archive-plugin \
+	thunderbird
 
 # Labwc
 dnf install -y \
@@ -40,7 +43,6 @@ dnf install -y \
 #NetworkManager-openvpn-gnome \
 #NetworkManager-sstp-gnome \
 #NetworkManager-vpnc-gnome \
-#Thunar \
 #blueman \
 #bolt \
 #dunst \
@@ -59,7 +61,6 @@ dnf install -y \
 #polkit
 #pulseaudio-utils
 #system-config-printer
-#thunar-archive-plugin
 #tuned-ppd
 #tuned-switcher
 #wlsunset
@@ -73,6 +74,9 @@ cp /ctx/labwc.desktop /usr/share/wayland-sessions/labwc.desktop
 
 # Set some defaults I prefer
 cp /ctx/foot.ini /etc/xdg/foot/foot.ini
+
+# Setup Labwc globally as I prefer
+cp -r /ctx/labwc /etc/xdg/.
 
 # Use a COPR Example:
 #
