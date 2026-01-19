@@ -9,7 +9,11 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# Sway
+cp /ctx/yum.repos.d/docker-ce.repo /etc/yum.repos.d/docker-ce.repo
+cp /ctx/yum.repos.d/vscode.repo /etc/yum.repos.d/vscode.repo
+
+# From base image: desktop
+#
 dnf install -y \
 	sddm \
 	sddm-wayland-sway \
@@ -29,21 +33,36 @@ dnf install -y \
 	swaylock \
 	Thunar \
 	thunar-archive-plugin \
-	thunderbird \
-	labwc
-#labwc?
-#dnf5 -y install wlopm
-#dnf5 -y install chayang
+	labwc \
+	wlopm \
+	chayang 
 
-# Developer Tools from starter image
-# toolbox
-# distrobox
-# podman
-# just
+# From base image:  applications
+# 	firefox
+dnf install -y \
+	thunderbird \
+	libreoffice \
+	gimp \
+	inkscape \
+	mpv \
+	vlc
+
+# From base image: Developer Tools
+# 	toolbox
+# 	distrobox
+# 	podman
+# 	just
+#	qemu
+#
 dnf install -y \
 	make \
 	neovim \
-	helix 
+	helix \
+	code \
+       	containerd.io \
+	docker-ce \
+	docker-ce-cli \
+	docker-compose-plugin	
 
 #NetworkManager-l2tp-gnome \
 #NetworkManager-libreswan-gnome \
@@ -96,4 +115,4 @@ cp -r /ctx/labwc /etc/xdg/.
 
 
 #### Example for enabling a System Unit File
-#systemctl enable podman.socket
+systemctl enable docker.socket
