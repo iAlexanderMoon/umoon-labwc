@@ -68,6 +68,7 @@
     </keybind>
   </keyboard>
   <mouse>
+    <default/>
     <context name="Root">
       <mousebind button="Left" action="Press">
         <action name="ShowMenu" menu="quick-menu"/>
