@@ -1,6 +1,6 @@
 <openbox_menu>
 
-<menu id="root-menu">
+<menu id="quick-menu">
   <!-- Make client-list-combined-menu a submenu of root-menu 
        You must supply a label or it will not appear in root-menu -->
   <!--
@@ -36,7 +36,7 @@
 
 </menu>
 
-<menu id="some-custom-menu">
+<menu id="right-menu">
   <!--
     Creates menu title.
     To create an empty header with no text,
