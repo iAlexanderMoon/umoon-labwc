@@ -26,6 +26,9 @@ dnf install -y \
 	wev \
 	wl-clipboard \
 	wlr-randr \
+	wlsunset \
+	xdg-desktop-portal-gtk \
+	xdg-desktop-portal-wlr \
 	sway \
 	sway-config-fedora \
 	swaybg \
@@ -93,10 +96,7 @@ dnf install -y \
 #system-config-printer
 #tuned-ppd
 #tuned-switcher
-#wlsunset
 #xarchiver
-#xdg-desktop-portal-gtk
-#xdg-desktop-portal-wlr
 #xorg-x11-server-Xwayland
 
 # Add labwc desktop option for wayland sessions
