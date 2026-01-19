@@ -69,10 +69,10 @@ dnf install -y \
 #xorg-x11-server-Xwayland
 
 # Add labwc desktop option for wayland sessions
-cp labwc.desktop /usr/share/wayland-sessions/labwc.desktop
+cp /ctx/labwc.desktop /usr/share/wayland-sessions/labwc.desktop
 
 # Set some defaults I prefer
-cp foot.ini /etc/xdg/foot/foot.ini
+cp /ctx/foot.ini /etc/xdg/foot/foot.ini
 
 # Use a COPR Example:
 #
