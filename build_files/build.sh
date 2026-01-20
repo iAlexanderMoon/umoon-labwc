@@ -39,7 +39,8 @@ dnf install -y \
 	labwc \
 	wlopm \
 	chayang \
-       	mako	
+       	mako \
+	wofi	
 
 # From base image:  applications
 # 	firefox
