@@ -40,7 +40,8 @@ dnf install -y \
 	wlopm \
 	chayang \
        	mako \
-	wofi	
+	wofi \
+	wlrctl	
 
 # From base image:  applications
 # 	firefox
