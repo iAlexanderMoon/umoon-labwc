@@ -117,7 +117,9 @@ cp -r /ctx/labwc /etc/xdg/.
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-
-
 #### Example for enabling a System Unit File
 systemctl enable docker.socket
+
+
+###  Change the name that will be used.
+awk '{sub(/PRETTY_NAME=.*/,"PRETTY_NAME=\"UMOON-LABWC\"")}1' /etc/os-release > /etc/os-release
