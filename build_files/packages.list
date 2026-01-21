@@ -1,0 +1,89 @@
+# Install packages
+
+## From Base Image
+#
+## Wayland: Boot Manager, Primary Desktop Packages for sway and labwc
+sddm
+sddm-wayland-sway
+foot
+kanshi
+slurp
+grim
+imv
+waybar
+wev
+wl-clipboard
+wlr-randr
+wlsunset
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr
+sway
+sway-config-fedora
+swaybg
+swayidle
+swaylock
+Thunar
+thunar-archive-plugin
+labwc
+wlopm
+chayang
+mako
+wofi
+wlrctl
+
+# Install Applications
+thunderbird
+libreoffice
+gimp
+inkscape
+mpv
+vlc
+sound-juicer
+picard
+
+# From base image: Developer Tools
+# toolbox
+# distrobox
+# podman
+# just
+#qemu
+# Additional Tools
+make
+neovim
+helix
+code
+containerd.io
+docker-ce
+docker-ce-cli
+docker-compose-plugin
+
+#NetworkManager-l2tp-gnome
+#NetworkManager-libreswan-gnome
+#NetworkManager-openconnect-gnome
+#NetworkManager-openvpn-gnome
+#NetworkManager-sstp-gnome
+#NetworkManager-vpnc-gnome
+#blueman
+#bolt
+#dunst
+#fprintd-pam
+#gnome-keyring-pam
+#gvfs
+#gvfs-smb
+#lxqt-policykit
+#mesa-dri-drivers
+#mesa-vulkan-drivers
+#network-manager-applet
+#pavucontrol
+#pinentry-gnome3
+#playerctl
+#plymouth-system-theme
+#polkit
+#pulseaudio-utils
+#system-config-printer
+#tuned-ppd
+#tuned-switcher
+#xarchiver
+#xorg-x11-server-Xwayland
+
+

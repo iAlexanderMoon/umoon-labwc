@@ -12,94 +12,9 @@ set -ouex pipefail
 cp /ctx/yum.repos.d/docker-ce.repo /etc/yum.repos.d/docker-ce.repo
 cp /ctx/yum.repos.d/vscode.repo /etc/yum.repos.d/vscode.repo
 
-# From base image: desktop
-#
-dnf install -y \
-	sddm \
-	sddm-wayland-sway \
-	foot \
-	kanshi \
-	slurp \
-	grim \
-	imv \
-	waybar \
-	wev \
-	wl-clipboard \
-	wlr-randr \
-	wlsunset \
-	xdg-desktop-portal-gtk \
-	xdg-desktop-portal-wlr \
-	sway \
-	sway-config-fedora \
-	swaybg \
-	swayidle \
-	swaylock \
-	Thunar \
-	thunar-archive-plugin \
-	labwc \
-	wlopm \
-	chayang \
-       	mako \
-	wofi \
-	wlrctl	
-
-# From base image:  applications
-# 	firefox
-dnf install -y \
-	thunderbird \
-	libreoffice \
-	gimp \
-	inkscape \
-	mpv \
-	vlc \
-	sound-juicer \
-	picard
-
-# From base image: Developer Tools
-# 	toolbox
-# 	distrobox
-# 	podman
-# 	just
-#	qemu
-#
-dnf install -y \
-	make \
-	neovim \
-	helix \
-	code \
-       	containerd.io \
-	docker-ce \
-	docker-ce-cli \
-	docker-compose-plugin	
-
-#NetworkManager-l2tp-gnome \
-#NetworkManager-libreswan-gnome \
-#NetworkManager-openconnect-gnome \
-#NetworkManager-openvpn-gnome \
-#NetworkManager-sstp-gnome \
-#NetworkManager-vpnc-gnome \
-#blueman \
-#bolt \
-#dunst \
-#fprintd-pam
-#gnome-keyring-pam
-#gvfs
-#gvfs-smb
-#lxqt-policykit
-#mesa-dri-drivers
-#mesa-vulkan-drivers
-#network-manager-applet
-#pavucontrol
-#pinentry-gnome3
-#playerctl
-#plymouth-system-theme
-#polkit
-#pulseaudio-utils
-#system-config-printer
-#tuned-ppd
-#tuned-switcher
-#xarchiver
-#xorg-x11-server-Xwayland
+# Load package list for install from packages.list
+packages=`sed -E '/^[[:blank:]]*(#|;|$)/d; s/[[:blank:]]*(#|;).*//' packages.list | tr '\n' ' '`
+dnf install -y ${packages}
 
 # Add labwc desktop option for wayland sessions
 cp /ctx/labwc.desktop /usr/share/wayland-sessions/labwc.desktop
@@ -124,4 +39,3 @@ systemctl enable docker.socket
 ###  Change the name that will be used.
 #awk '{sub(/PRETTY_NAME=.*/,"PRETTY_NAME=\"UMOON-LABWC\"")}1' /etc/os-release > /etc/os-release
 echo PRETTY_PRINT=\"UMOON-LABWC\" > /etc/os-release
-
