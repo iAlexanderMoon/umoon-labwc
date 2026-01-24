@@ -40,6 +40,7 @@ mpv
 vlc
 sound-juicer
 picard
+audacious
 
 # From base image: Developer Tools
 # toolbox
