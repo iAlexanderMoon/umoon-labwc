@@ -13,7 +13,8 @@ cp /ctx/yum.repos.d/docker-ce.repo /etc/yum.repos.d/docker-ce.repo
 cp /ctx/yum.repos.d/vscode.repo /etc/yum.repos.d/vscode.repo
 
 # Load package list for install from packages.list
-packages=`sed -E '/^[[:blank:]]*(#|;|$)/d; s/[[:blank:]]*(#|;).*//' packages.list | tr '\n' ' '`
+packages=`sed -E '/^[[:blank:]]*(#|;|$)/d; s/[[:blank:]]*(#|;).*//' /ctx/packages.list | tr '\n' ' '`
+
 dnf install -y ${packages}
 
 # Add labwc desktop option for wayland sessions
