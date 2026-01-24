@@ -75,7 +75,7 @@ docker-compose-plugin
 #mesa-dri-drivers
 #mesa-vulkan-drivers
 #network-manager-applet
-#pavucontrol
+pavucontrol
 #pinentry-gnome3
 #playerctl
 #plymouth-system-theme
