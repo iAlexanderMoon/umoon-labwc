@@ -42,4 +42,4 @@ systemctl enable docker.socket
 #echo PRETTY_PRINT=\"UMOON-LABWC\" > /etc/os-release
 
 # Try this to the end of /usr/lib/os-release
-echo VARIANT="My Custom bootc OS" && echo VARIANT_ID=com.gitlab.customos.foo >> /usr/lib/os-release
+#echo VARIANT="My Custom bootc OS" && echo VARIANT_ID=com.gitlab.customos.foo >> /usr/lib/os-release
