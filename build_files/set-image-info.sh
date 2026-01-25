@@ -3,7 +3,8 @@
 echo "::group:: ===$(basename "$0")==="
 
 set -ouex pipefail
-
+IMAGE_VENDOR="ialexandermoon"
+IMAGE_NAME="umoon-labwc"
 IMAGE_PRETTY_NAME="Umoon-labwc"
 IMAGE_LIKE="fedora"
 HOME_URL="https://github.com/iAlexanderMoon/umoon-labwc"
