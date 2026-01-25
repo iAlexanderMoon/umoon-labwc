@@ -115,6 +115,8 @@ jobs:
           # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
+          envs: |
+            VERSION="${{ env.DEFAULT_TAG }}.{{date 'YYYYMMDD'}}"
           labels: ${{ steps.metadata.outputs.labels }}
           oci: false
 
