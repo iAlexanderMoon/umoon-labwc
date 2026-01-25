@@ -26,6 +26,9 @@ cp /ctx/foot.ini /etc/xdg/foot/foot.ini
 # Setup Labwc globally as I prefer
 cp -r /ctx/labwc /etc/xdg/.
 
+# Setup Waybar globally as I prefer
+cp -r /ctx/waybar /etc/xdg/.
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
