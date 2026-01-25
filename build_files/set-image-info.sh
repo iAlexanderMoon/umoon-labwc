@@ -14,6 +14,8 @@ BUG_SUPPORT_URL="https://github.com/iAlexanderMoon/umoon-labwc/issues/"
 CODE_NAME="Stargazer"
 VERSION="${VERSION:-00.00000000}"
 
+mkdir /usr/share/umoon-labwc-os
+
 IMAGE_INFO="/usr/share/umoon-labwc-os/image-info.json"
 IMAGE_REF="ostree-image-signed:docker://ghcr.io/$IMAGE_VENDOR/$IMAGE_NAME"
 
@@ -63,12 +65,5 @@ echo "IMAGE_VERSION=\"${VERSION}\"" >> /usr/lib/os-release
 # Fix issues caused by ID no longer being fedora
 sed -i "s|^EFIDIR=.*|EFIDIR=\"fedora\"|" /usr/sbin/grub2-switch-to-blscfg
 
-# Weekly user count for fastfetch
-ghcurl https://raw.githubusercontent.com/ublue-os/countme/main/badge-endpoints/aurora.json | jq -r ".message" > /usr/share/ublue-os/fastfetch-user-count
-
-# bazaar weekly downloads used for fastfetch
-curl -X 'GET' \
-'https://flathub.org/api/v2/stats/io.github.kolunmi.Bazaar?all=false&days=1' \
--H 'accept: application/json' | jq -r ".installs_last_7_days" | numfmt --to=si --round=nearest > /usr/share/ublue-os/bazaar-install-count
 
 echo "::endgroup::"
