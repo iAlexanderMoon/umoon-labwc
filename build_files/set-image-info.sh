@@ -25,6 +25,10 @@ if [[ "${IMAGE_NAME}" =~ nvidia-open ]]; then
   image_flavor="nvidia-open"
 fi
 
+
+UBLUE_IMAGE_TAG="TAG"
+BASE_IMAGE_NAME=$IMAGE_NAME
+
 cat >$IMAGE_INFO <<EOF
 {
   "image-name": "$IMAGE_NAME",
