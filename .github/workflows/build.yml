@@ -116,7 +116,7 @@ jobs:
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
           build-args: |
-            VERSION="${{ env.DEFAULT_TAG }}.{{date 'YYYYMMDD'}}"
+            VERSION=${{ env.DEFAULT_TAG }}.{{date 'YYYYMMDD'}}
           labels: ${{ steps.metadata.outputs.labels }}
           oci: false
 
