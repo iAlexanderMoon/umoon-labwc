@@ -3,21 +3,24 @@
 echo "::group:: ===$(basename "$0")==="
 
 set -ouex pipefail
+
+BASE_IMAGE_NAME="silverblue"
+FEDORA_MAJOR_VERSION="43"
 IMAGE_VENDOR="ialexandermoon"
 IMAGE_NAME="umoon-labwc"
-IMAGE_PRETTY_NAME="Umoon-labwc"
+IMAGE_PRETTY_NAME="umoon-labwc"
 IMAGE_LIKE="fedora"
 HOME_URL="https://github.com/iAlexanderMoon/umoon-labwc"
 DOCUMENTATION_URL="https://github.com/iAlexanderMoon/umoon-labwc/tree/main/doc"
 SUPPORT_URL="https://github.com/iAlexanderMoon/umoon-labwc/issues/"
 BUG_SUPPORT_URL="https://github.com/iAlexanderMoon/umoon-labwc/issues/"
 CODE_NAME="Stargazer"
-VERSION="${VERSION:-00.00000000}"
-
-mkdir /usr/share/umoon-labwc-os
-
+#VERSION="${VERSION:-00.00000000}"
+UBLUE_IMAGE_TAG="latest"
 IMAGE_INFO="/usr/share/umoon-labwc-os/image-info.json"
 IMAGE_REF="ostree-image-signed:docker://ghcr.io/$IMAGE_VENDOR/$IMAGE_NAME"
+
+mkdir /usr/share/umoon-labwc-os
 
 # Image Flavor
 image_flavor="main"
@@ -26,8 +29,6 @@ if [[ "${IMAGE_NAME}" =~ nvidia-open ]]; then
 fi
 
 
-UBLUE_IMAGE_TAG="TAG"
-BASE_IMAGE_NAME=$IMAGE_NAME
 
 cat >$IMAGE_INFO <<EOF
 {
