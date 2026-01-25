@@ -38,7 +38,7 @@ systemctl enable docker.socket
 
 
 ###  Change the name that will be used.
-awk '{sub(/PRETTY_NAME=.*/,"PRETTY_NAME=\"UMOON-LABWC\"")}1' /etc/os-release > /etc/os-release
+#awk '{sub(/PRETTY_NAME=.*/,"PRETTY_NAME=\"UMOON-LABWC\"")}1' /etc/os-release > /etc/os-release
 #echo PRETTY_PRINT=\"UMOON-LABWC\" > /etc/os-release
 
 # Try this to the end of /usr/lib/os-release
