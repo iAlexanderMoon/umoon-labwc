@@ -32,6 +32,7 @@ wofi
 wlrctl
 fuzzel
 pavucontrol
+niri
 
 # Install Applications
 thunderbird
@@ -59,6 +60,7 @@ containerd.io
 docker-ce
 docker-ce-cli
 docker-compose-plugin
+nmap
 
 #NetworkManager-l2tp-gnome
 #NetworkManager-libreswan-gnome
