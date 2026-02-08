@@ -32,6 +32,7 @@ wofi
 wlrctl
 fuzzel
 pavucontrol
+niri
 
 # Install Applications
 # From base: firefox
@@ -61,6 +62,7 @@ containerd.io
 docker-ce
 docker-ce-cli
 docker-compose-plugin
+nmap
 
 #NetworkManager-l2tp-gnome
 #NetworkManager-libreswan-gnome
