@@ -39,9 +39,9 @@ niri
 chromium
 thunderbird
 libreoffice
-gimp
-inkscape
-mpv
+#gimp
+#inkscape
+#mpv
 vlc
 sound-juicer
 picard
