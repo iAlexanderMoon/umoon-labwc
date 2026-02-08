@@ -34,6 +34,8 @@ fuzzel
 pavucontrol
 
 # Install Applications
+# From base: firefox
+chromium
 thunderbird
 libreoffice
 gimp
