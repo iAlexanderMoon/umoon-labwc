@@ -52,7 +52,7 @@ audacious
 # distrobox
 # podman
 # just
-#qemu
+# qemu
 # Additional Tools
 make
 neovim
@@ -63,6 +63,7 @@ docker-ce
 docker-ce-cli
 docker-compose-plugin
 nmap
+quickemu
 
 #NetworkManager-l2tp-gnome
 #NetworkManager-libreswan-gnome
