@@ -34,6 +34,9 @@ fuzzel
 pavucontrol
 niri
 
+# labwc/sway require a polkit agent: since we are using Thunar from XFCE, let use theirs
+xfce-polkit
+
 # Install Applications
 # From base: firefox
 chromium
