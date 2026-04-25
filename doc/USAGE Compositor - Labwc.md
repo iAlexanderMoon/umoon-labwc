@@ -170,3 +170,14 @@ more /usr/share/doc/labwc/rc.xml.all
 
 ## Themes
  ~/.local/share/themes/
+
+## Polkit
+* Graphical Authentication with polkitd is required for some applications to access resources when running in 
+* polkit-mate agent is installed for this purpose
+* it needs to be autostarted ~/.config/labwc/autostart 
+
+```~/.config/labwc/autostart
+# start polkit agent
+exec /usr/libexec/polkit-mate-authentication-agent-1 &
+```
+

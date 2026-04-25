@@ -2,19 +2,24 @@
 * A custom Fedora Atomic image designed for me.
 * From UBlue base-main:43
 
-## Install by rebase (on an atomic desktop)
-* setup signing and this should work
-* rpm-ostree rebase ostree-image-signed:ghcr.io/ialexandermoon/umoon-labwc:latest
+## Install by bootc switch (on an atomic desktop)
+* bootc switch <image-url>
 ```sh
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/ialexandermoon/umoon-labwc:latest
+bootc switch ostree-unverified-registry:ghcr.io/ialexandermoon/umoon-labwc:latest
+```
+
+## Check status
+```
+bootc status
+```
+
+## Upgrade os (bootc or rpm-ostree)
+* bootc will replace rpm-ostree for container-native workflows
+```sh
+bootc upgrade
 systemctl reboot
 ```
 
-## Upgrade os
-```sh
-rpm-ostree upgrade
-systemctl reboot
-```
 # setup signing before this should work
 * rpm-ostree rebase ostree-image-signed:ghcr.io/ialexandermoon/umoon-labwc:latest
 
